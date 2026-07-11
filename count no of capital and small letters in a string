@@ -1,0 +1,18 @@
+# include<stdio.h>
+int main(){
+	char word[50];
+	int i,countc=0,counts=0;
+	printf("Enter the word:");
+	scanf("%s",&word);
+	for(i=0;word[i]!='\0';i++){
+		if(word[i]>='a' && word[i]<='z'){
+			counts++;
+		}
+		else if(word[i]>='A' && word[i]<='Z'){
+			countc++;
+		}
+	}
+	printf("The no of capital letters in the given word is %d\n",countc);
+	printf("The no of capital letters in the given word is %d\n",counts);
+	return 0;
+}
