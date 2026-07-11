@@ -1,0 +1,14 @@
+# include<stdio.h>
+int main(){
+	char word[50];
+	int i;
+	printf("Enter the word in lower case:");
+	scanf("%s",word);
+	for(i=0;word[i]!='\0';i++){
+		if(word[i]>='a' && word[i]<='z'){
+			word[i]=word[i]-32;
+		}
+	}
+	printf("The Uppercase string: %s",word);
+	return 0;
+}
