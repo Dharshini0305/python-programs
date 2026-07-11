@@ -1,0 +1,14 @@
+# include <stdio.h>
+int main(){
+	char source[50];
+	char dest[50];
+	int i;
+	printf("Enter the source string:");
+	scanf("%s",&source);
+	for(i=0;source[i]!='\0';i++){
+		dest[i]=source[i];
+	}
+	printf("SOURCE: %s\n",source);
+	printf("DESTINATION: %s",dest);
+	return 0;
+}
